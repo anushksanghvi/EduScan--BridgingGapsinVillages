@@ -22,23 +22,45 @@
             <a href="About.html" class="about-button border">About Us</a>
         </div>
 
+
         <div class="panel">
+            <a href="/Signin.html" style="text-decoration: none; color: #ffffff;">Resources</a>
 
-            <div class="panel-all border">
-                <i class="fa-solid fa-bars" style="text-decoration: none; color: #ffffff;"></i>
-                <a href="Signin.html" style="text-decoration: none; color: #ffffff;">All</a>            
-            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Classes
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/Signin.html">Class-1</a>
+                    <a href="/Signin.html">Class-2</a>
+                    <a href="/Signin.html">Class-3</a>
+                    <a href="Signin.html">Class-4</a>
+                    <a href="/Signin.html">Class-5</a>
+                </div>
+            </div> 
 
-            <div class="classes border">
-                <a href="./Signin.html" style="text-decoration: none; color: #ffffff;">Classes</a>
-            </div>
-            <div class="survey border">
-                <a href="Signin.html" style="text-decoration: none; color: #ffffff;">Survey</a>
-            </div>
-            <div class="contact-us border">
-                <a href="Signin.html" style="text-decoration: none; color: #ffffff;">Contact us</a>
-            </div>
+            <a href="/Signin.html" style="text-decoration: none; color: #ffffff;">Survey</a>
+            <a href="/Signin.html" style="text-decoration: none; color: #ffffff;">Contact-us</a>
+
         </div>
+
+    <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+    </script> 
 
     </header>
 
@@ -63,7 +85,7 @@
             <ul>
                 <p>Get to Know Us</p>
                 <a href="About.html" style="text-decoration: none;">About EduScan</a>
-                <a href="Signin.html" style="text-decoration: none;">FAQ</a>
+                <a href="/FAQ.html" style="text-decoration: none;">FAQ</a>
                 <a href="Signin.html" style="text-decoration: none;">Survey</a>
             </ul>
             <ul>

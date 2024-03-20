@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* navbar */
 .navbar {
     height: 70px;
     background-color: rgb(95, 2, 129);
@@ -75,6 +76,8 @@ body {
     font-size: 17px;
 }
 
+
+/* panel */
 .panel {
     height: 50px;
     background-color: rgba(87, 1, 118, 0.842);
@@ -82,7 +85,66 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding: 2px 4px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.panel a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .panel a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(76, 0, 103);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
 
 
 .edu-section{
@@ -116,7 +178,6 @@ body {
 
 
 /* Footer */
-
 .foot-panel1 {
     background-color:rgba(87, 1, 118, 0.842);
     color: white;
