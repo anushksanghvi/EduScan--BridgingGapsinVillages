@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(252, 244, 255);
     background-attachment: fixed; 
     background-position: 100% center; 
     background-position: center bottom 15%;
@@ -146,34 +145,37 @@ body {
     display: block;
   }
 
-  /*product section*/
-.subject-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color:linear-gradient(hsl(206, 68%, 91%) 0%, #aed7ff 100%); 
-}
 
-.box {
-    height: 500px;
-    width: 22%;
-    background-color: white;
-    padding: 20px 0px 15px;
-    margin-top: 10px;
-    border-radius: 12px;
-}
 
-.box-img {
-    height: 300px;
+.edu-section{
+    background-image: url(/util/img-1.jpg);
     background-size: cover;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    background-blend-mode: overlay;
+    background-color:rgba(0, 0, 0, 0.388);
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.edu-text{
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.box-content {
-    margin-left: 10px;
-    margin-right: 10px;
+.divein-button{
+    background-color:rgb(123, 56, 147);
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px ;
+    margin-top: 10px ;
+    cursor: pointer;
 }
+
+
+
 
 /* Footer */
 .foot-panel1 {
