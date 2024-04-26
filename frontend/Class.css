@@ -43,7 +43,7 @@ body {
 .eduscan-text {
     position: absolute;
     top: 22px;
-    right: 1330px;
+    right: 1190px;
     color: #efefde;
     font-size: 24px;
     font-weight: bold;
@@ -156,6 +156,7 @@ body {
     background-color:rgb(226, 206, 234) ;
     height: fit-content;
     flex-wrap: wrap;
+    margin-top: -20px;
   }
   
   

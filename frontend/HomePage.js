@@ -13,3 +13,7 @@ function myFunction() {
       }
     }
   }
+
+  function showAlert() {
+    alert("Please select the class first");
+}
