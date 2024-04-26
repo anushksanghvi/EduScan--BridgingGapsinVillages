@@ -59,7 +59,7 @@
                     body: JSON.stringify(secure)
                 }).then(response => {
                     if (response.status === 200) {
-                        window.location.href = '/';
+                        window.location.href = '/HomePage.html';
                     } else {
                         response.text().then(text => {
                             alert("Wrong E-mail and/or password");

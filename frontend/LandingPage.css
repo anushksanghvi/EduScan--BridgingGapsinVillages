@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-    background-image: url("/util/EduScan-logo.jpg");
+    background-image: url("./util/EduScan-logo.jpg");
     height: 55px;
     width: 55px;
     background-size: cover;
@@ -148,7 +148,7 @@ body {
 
 
 .edu-section{
-    background-image: url(/util/img-1.jpg);
+    background-image: url(./util/img-1.jpg);
     background-size: cover;
     background-blend-mode: overlay;
     background-color:rgba(0, 0, 0, 0.388);

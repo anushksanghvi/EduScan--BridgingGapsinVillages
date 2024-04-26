@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="./signupstyle.css">
     <title>Sign up Page</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             </div> 
             <div class="eduscan-text">EduScan</div>
             <a href="/LandingPage.html" class="home-button border">Home</a>
-            <a href="About.html" class="about-button border">About Us</a>
+            <a href="./About.html" class="about-button border">About Us</a>
         </div>
     </header>    
 
@@ -31,7 +31,7 @@
             <button id="signup" type="button" class="signup-btn border">Sign up</button>
             <hr>
             <p class="or">OR</p>
-            <a href="Signin.html">Already have an account?<br>Sign in</a>
+            <a href="./Signin.html">Already have an account?<br>Sign in</a>
         </form>
     </div>
 
@@ -43,9 +43,8 @@
             let name=document.getElementById("Name").value
             let email=document.getElementById("Email").value
             let password=document.getElementById("Password").value
-            let agree=document.getElementById("check").checked
 
-        if(name == " " || email == " " || password == " " ||  !agree){
+        if(name == " " || email == " " || password == " "){
             alert("Fill all the details properly")
             return
         }
@@ -61,7 +60,7 @@
                 headers:{
                     'Content-Type': 'application/json'
                 },
-                'body':JSON.stringify(data)    
+                body:JSON.stringify(data)    
             }).then(response =>{
                  response.text(),
                  alert("User has been registered")

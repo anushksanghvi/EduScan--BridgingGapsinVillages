@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-    background-image: url("/util/EduScan-logo.jpg");
+    background-image: url("./util/EduScan-logo.jpg");
     height: 55px;
     width: 55px;
     background-size: cover;
